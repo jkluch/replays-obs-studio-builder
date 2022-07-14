@@ -79,6 +79,7 @@ xcopy "%OBS_INSTALL_PREFIX%\win64\obs-plugins" "%OBS_INSTALL_PREFIX%\win64\bin\6
 xcopy "%OBS_INSTALL_PREFIX%\win64\data" "%OBS_INSTALL_PREFIX%\win64\bin\64bit\data\" /E /Y /I
 xcopy "%WIN_CAPTURE_AUDIO_DIR%" "%OBS_INSTALL_PREFIX%\win64\bin\64bit\" /E /Y /I
 
+:: We can't create the tar file using a full path because tar doesn't correctly handle colons
 cd %OBS_STUDIO_BUILD_DIR%
-
-tar -a -c -f "%BASE_DIR%obs_build.zip" build
+tar -a -c -f obs_build.zip build
+move obs_build.zip "%BASE_DIR%\obs_build.zip"
