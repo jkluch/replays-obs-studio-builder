@@ -1,0 +1,13 @@
+diff --git a/plugins/win-capture/graphics-hook-info.h b/plugins/win-capture/graphics-hook-info.h
+index f449afa98..d1427a1a5 100644
+--- a/plugins/win-capture/graphics-hook-info.h
++++ b/plugins/win-capture/graphics-hook-info.h
+@@ -24,7 +24,7 @@
+ #define SHMEM_HOOK_INFO L"CaptureHook_HookInfo"
+ #define SHMEM_TEXTURE L"CaptureHook_Texture"
+ 
+-#define PIPE_NAME "CaptureHook_Pipe"
++#define PIPE_NAME "ReplaysCaptureHook_Pipe"
+ 
+ #pragma pack(push, 8)
+ 

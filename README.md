@@ -1,0 +1,1 @@
+This project downloads [obs-studio](https://github.com/obsproject/obs-studio) applies the PIPE_NAME patch, then builds obs and creates an archive
