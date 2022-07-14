@@ -79,6 +79,6 @@ xcopy "%OBS_INSTALL_PREFIX%\win64\obs-plugins" "%OBS_INSTALL_PREFIX%\win64\bin\6
 xcopy "%OBS_INSTALL_PREFIX%\win64\data" "%OBS_INSTALL_PREFIX%\win64\bin\64bit\data\" /E /Y /I
 xcopy "%WIN_CAPTURE_AUDIO_DIR%" "%OBS_INSTALL_PREFIX%\win64\bin\64bit\" /E /Y /I
 
-cd %BASE_DIR%
+cd %OBS_STUDIO_BUILD_DIR%
 
-tar -a -c -f obs_build.zip "%OBS_INSTALL_PREFIX%"
+tar -a -c -f obs_build.zip build
